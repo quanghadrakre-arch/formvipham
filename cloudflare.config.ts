@@ -9,7 +9,7 @@ if (!/^[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?$/.test(workerName)) {
 }
 
 export default defineConfig({
-  accountId: "827441ab89e8d465ee94165ef242d7eb",
+  accountId: "4658479748241b16ea9de243ffec5e6b",
   worker: defineWorker({
     name: workerName,
     entrypoint: "vinext/server/fetch-handler",
@@ -22,7 +22,7 @@ export default defineConfig({
     },
     env: {
       ASSETS: bindings.assets(),
-      VINEXT_KV_CACHE: bindings.kv({ id: "a607e762e8f34932ace311edc9bdf367" }),
+      VINEXT_KV_CACHE: bindings.kv({ id: "ddc75356e5bb4a11ba8c6012ddfd0550" }),
     },
   }),
 });
